@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chimbo Media Web - Blog</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="../index.html" class="navbar-brand">
+                        <svg
+                            class="brand-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                            ></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span class="brand-text"
+                            ><span class="text-accent">Chimbo</span> Media</span
+                        >
+                    </a>
+
+                    <div class="navbar-menu">
+                        <a href="/html/blog.html" class="nav-link">Blog</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="blog-container">
+            <header class="blog-header">
+                <h1 class="hero-title">
+                    Chimbo <span class="text-accent">Blog</span>
+                </h1>
+                <p class="hero-description">
+                    Guía de inicio rápido y documentación oficial.
+                </p>
+            </header>
+
+            <article class="blog-card">
+                <h2 class="blog-subtitle">Requisitos de instalación</h2>
+                <p class="blog-text">
+                    Para instalar Chimbo Media, asegúrate de tener instalados
+                    <strong>Python 3</strong>, <strong>pip</strong> y
+                    <strong>entornos virtuales</strong> en tu sistema.
+                </p>
+            </article>
+
+            <article class="blog-card">
+                <h2 class="blog-subtitle">Instalación</h2>
+                <p class="blog-text">
+                    Una vez que tengas los requisitos, descarga el archivo
+                    <a href="/public/install.sh" download class="blog-link"
+                        >install.sh</a
+                    >. Abre tu terminal, dale permisos de ejecución y lanza el
+                    script:
+                </p>
+
+                <div class="terminal-block">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="prompt">makima@linux:~$</span> chmod +x install.sh
+<span class="prompt">makima@linux:~$</span> ./install.sh</code></pre>
+                </div>
+                <br />
+                <p class="blog-text">
+                    El archivo de instalación crea un alias en el archivo
+                    <strong>bashrc</strong>
+                    y luego reinicia la terminal.
+                </p>
+            </article>
+
+            <article class="blog-card">
+                <h2 class="blog-subtitle">Uso básico</h2>
+                <p class="blog-text">
+                    Una vez instalado, puedes invocar la herramienta
+                    directamente desde cualquier ubicación en tu terminal:
+                </p>
+
+                <div class="terminal-block">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="prompt">makima@linux:~$</span> chimbomedia</code></pre>
+                </div>
+
+                <div class="blog-steps">
+                    <p class="blog-text">
+                        El flujo interactivo te pedirá lo siguiente:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>URL:</strong> Ingresa el enlace del video o
+                            la canción.
+                        </li>
+                        <li>
+                            <strong>Formato:</strong> Selecciona si deseas
+                            extraer solo el audio o descargar el video completo.
+                        </li>
+                        <li>
+                            <strong>Ruta:</strong> Escribe el directorio donde
+                            deseas guardar tu archivo.
+                        </li>
+                        <li>
+                            <strong>Metadatos:</strong> Decide si quieres
+                            descargar e incrustar la portada oficial.
+                        </li>
+                    </ol>
+                    <p class="blog-text">
+                        ¡Listo! Tu archivo se descargará con la más alta
+                        fidelidad y la portada se guardará sincronizada en la
+                        misma carpeta.
+                    </p>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

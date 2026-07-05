@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chimbo Media</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="#" class="navbar-brand">
+                        <svg
+                            class="brand-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                            ></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span class="brand-text"
+                            ><span class="text-accent">Chimbo</span> Media</span
+                        >
+                    </a>
+
+                    <div class="navbar-menu">
+                        <a href="/html/blog.html" class="nav-link">Blog</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section id="hero" class="hero-section">
+                <div class="hero-tagline-wrapper">
+                    <p class="hero-tagline">
+                        Un descargador de música de código abierto.
+                    </p>
+                </div>
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title">
+                        <span class="text-accent">Chimbo</span> Media
+                    </h1>
+                </div>
+                <div class="hero-description-wrapper">
+                    <p class="hero-description">
+                        Descarga tus canciones favoritas de forma rápida y
+                        sencilla desde tu terminal.
+                    </p>
+                </div>
+            </section>
+            <section id="actions" class="action-section">
+                <div class="btn-wrapper">
+                    <a
+                        href="/public/install.sh"
+                        download
+                        class="btn btn-primary"
+                        >Comenzar ahora</a
+                    >
+                </div>
+                <div class="btn-wrapper">
+                    <a
+                        href="https://github.com/theJoseFer10/chimbo-media"
+                        class="btn btn-secondary"
+                        >Nuestro repositorio</a
+                    >
+                </div>
+            </section>
+
+            <section id="installation" class="installation-section">
+                <div class="installation-wrapper">
+                    <h2 class="installation-title">Instalación</h2>
+                    <p class="installation-description">
+                        Descarga nuestro archivo
+                        <a href="/public/install.sh" download>install.sh</a>.
+                        Luego, abre tu consola y ejecuta los siguientes comandos
+                        para darle permisos y lanzarlo:
+                    </p>
+
+                    <div class="terminal-block">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <pre><code><span class="prompt">makima@linux:~$</span> chmod +x install.sh
+<span class="prompt">makima@linux:~$</span> ./install.sh</code></pre>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
